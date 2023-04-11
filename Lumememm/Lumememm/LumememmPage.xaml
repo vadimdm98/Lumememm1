@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:shapes="clr-namespace:Xamarin.Forms.Shapes;assembly=Xamarin.Forms.Core"
+             x:Class="Lumememm.LumememmPage">
+
+    <ContentPage.Content>
+
+        <Grid>
+
+            <StackLayout>
+            
+
+            <StackLayout x:Name="Container" 
+                                Padding="0,30,0,0" 
+                                Margin="0"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="CenterAndExpand"
+                                Spacing="0">
+
+
+                <StackLayout Spacing="-20">
+
+                        <Frame x:Name="Pea"
+                            BackgroundColor="White"
+                            WidthRequest="100"
+                            HeightRequest="100"
+                            CornerRadius="56"
+                            Padding="3"
+                            BorderColor="White"
+                            HorizontalOptions="Center"
+                            VerticalOptions="CenterAndExpand">
+                        </Frame>
+
+                        <Frame x:Name="Kael"
+                            BackgroundColor="White"
+                            WidthRequest="150"
+                            HeightRequest="150"
+                            Padding="3"
+                            BorderColor="joWhite"
+                            CornerRadius="80"
+                            
+                            HorizontalOptions="Center"
+                            VerticalOptions="CenterAndExpand">
+                        </Frame>
+
+                        <Frame x:Name="Keha"
+                            BackgroundColor="White"
+                            WidthRequest="200"
+                            HeightRequest="200"
+                            Padding="3"
+                            BorderColor="NavajoWhite"
+                            CornerRadius="100"
+                            
+                            HorizontalOptions="Center"
+                            VerticalOptions="CenterAndExpand">
+                        </Frame>
+
+                </StackLayout>
+
+            </StackLayout>
+                <Grid
+                    VerticalOptions="EndAndExpand" 
+                    HorizontalOptions="CenterAndExpand"
+                    Padding="0"
+                    Margin="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="HideButton" CornerRadius="10" Padding="0" Margin="0" Grid.Row="0" Grid.Column="0" Text="Peitma" TextColor="DimGray" FontAttributes="Bold" BackgroundColor = "LightBlue" VerticalOptions="End" Clicked="OnHideButtonClicked"/>
+                    <Button x:Name="ShowButton" CornerRadius="10" Padding="0" Margin="0" Grid.Row="0" Grid.Column="1" Text="Kujutama" TextColor= "DimGray" FontAttributes="Bold" BackgroundColor = "LightBlue" VerticalOptions="End" Clicked="OnShowButtonClicked"/>
+                    <Button x:Name="ColorButton" CornerRadius="10" Padding="0" Margin="0" Grid.Row="0" Grid.Column="2" Text="Koloreerima" TextColor="DimGray" FontAttributes="Bold" BackgroundColor = "LightBlue" VerticalOptions="End" Clicked="OnColorButtonClicked"/>
+                    <Button x:Name="MeltButton" CornerRadius="10" Padding="0" Margin="0" Grid.Row="1" Grid.Column="0" Text="Sulatama" TextColor="DimGray" FontAttributes="Bold" BackgroundColor = "LightBlue" VerticalOptions="End" Clicked="OnMeltButtonClicked"/>
+                    <Button x:Name="TagasiButton" CornerRadius="10" Padding="0" Margin="0" Grid.Row="1" Grid.Column="1" Text="Tagasi" TextColor="DimGray" FontAttributes="Bold" BackgroundColor = "LightBlue" VerticalOptions="End" Clicked="OnTagasiButtonClicked"/>
+                    <Button x:Name="JumpButton" CornerRadius="10" Padding="0" Margin="0" Grid.Row="1" Grid.Column="2" Text="Hüppama" TextColor="DimGray" FontAttributes="Bold" BackgroundColor = "LightBlue" VerticalOptions="End" Clicked="OnJumpButtonClicked"/>
+
+                </Grid>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
